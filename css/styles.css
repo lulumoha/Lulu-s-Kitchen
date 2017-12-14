@@ -5,21 +5,36 @@
   height: 200px;
   }
 
+
 #price{
   color: purple;
-  float: right;
+/*  float: right;*/
+top: : 0px;
+right: 0px;
+
 
 }
 #select{
   color: purple;
-  float: right;
-  /*padding: 30px;*/
-}
+  }
 
 .prices{
   color: blue;
 }
 
+.btn{
+  color: red;
+}
+
+.nav{
+  float:right;
+  width: 100px;
+  height: 200px;
+  font-weight: bolder;
+
+
+
+}
 
 /* css for menu images */
     .products:hover {

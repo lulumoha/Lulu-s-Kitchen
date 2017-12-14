@@ -8,5 +8,5 @@ i++;
 }
 
 $("button").click(function(){
-  document.getElementById("select").innerHTML="Selected Items" +i;
-});
+  document.getElementById("select").innerHTML="Selected" +" " +i;
+  });
