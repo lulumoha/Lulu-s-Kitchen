@@ -22,8 +22,9 @@ function validateForm() {
     }
     // If x is Not a Number or less than one or greater than 10
     if (isNaN(z) || z < 1 || z> 10000000000) {
-        alert("Number is not in Correct Format and Enter not more than 10 digits");
+       alert("Number is not in Correct Format and Enter not more than 10 digits");
     }
+
      else {
 	alert("Form Submitted");
         }
