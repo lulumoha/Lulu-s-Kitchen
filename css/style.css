@@ -203,17 +203,6 @@ a:hover
   transform: translate(-90%,0%)
 }
 
-}
-.social {
-  float:right !important;
-  padding: 20px !important;
-}
-.nav_social {
-  margin-right: 140px;
-}
-.uppercase {
-  text-transform: uppercase;
-}
 .boldWeight {
   font-weight:700;
 }
@@ -394,9 +383,29 @@ footer  {
 }
 
 #footer p {
-  margin-top: 160px;
+  margin-top: 260px;
+  text-align: center;
   color: #fff;
 }
 .bottom {
   padding-top: 12px;
+}
+.social1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+.social {
+  float:right !important;
+  padding: 20px !important;
+}
+.nav_social {
+  margin-top: 70px;
+  margin-right: 43%;
+}
+.nav_social li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
 }
