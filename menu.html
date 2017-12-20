@@ -1,360 +1,639 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <title>Lulu's Cuisine</title>
+    <title>Lulus's Plate </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Include SmartCart CSS -->
+    <link href="css/smart_cart.min.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  <div class ="nav">
-      <p id="select">Selected=0</p>
-      <p id="price">Total price Ksh.=0</p>
-      <a href ="#"></a>
-    </div>
+    <br />
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="breakfast">
+                        Breakfast
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <!-- BEGIN PRODUCTS -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/breakfast/cereal.jpeg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Cereal</h4>
+                                        <p data-name="product_desc">Lorem ipsum dolor sit amet.</p>
+                                        <hr class="line">
 
-  <div class="col-md-9">
-    <div class=headers>
-      <h2>Main Dishes</h2>
-    </div>
-    <div class="row">
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 1,000.00</strong>
 
-      <div class="col-sm-4 col-lg-4 col-md-4 ">
-        <div class="products">
-          <img src="img/main/pilau.jpg" alt="" >
-          <p id="desc">Pilau is a specialty in which Rice is flavored with spices and cooked in a well seasoned broth of Meat, Poultry or Fish.</p>
-          <p class="prices" data_value="1500">Ksh.1500</p>
-          <button onclick="adcart()">Add To Cart</button>
-          </div>
-      </div>
+                                            <input name="product_price" value="1000.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/breakfast/fullbreakfast.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Full Breakfast</h4>
+                                        <p data-name="product_desc">Duis aute irure dolor. </p>
+                                        <hr class="line">
 
-      <div class="col-sm-4 col-lg-4 col-md-4">
-          <div class="products">
-          <img src="img/main/schickentikka.jpg" alt="">
-          <p id="desc">chickentikka is boneless chicken baked using skewers on a brazier after marinating in spices and yogurt.</p>
-          <p class="prices" data_value="2000">Ksh.2000</p>
-          </div>
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 2,000.00</strong>
+
+                                            <input name="product_price" value="2000.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/breakfast/waffle.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Waffle</h4>
+                                        <p data-name="product_desc">Ut enim ad minim veniam. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 990.00</strong>
+
+                                            <input name="product_price" value="990.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/breakfast/sandwich.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Sandwich</h4>
+                                        <p data-name="product_desc">Sandwich Lorem ipsum amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 850.00</strong>
+
+                                            <input name="product_price" value="850.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/breakfast/croissant.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Croissant</h4>
+                                        <p data-name="product_desc">Croissant enim ad minim veniam.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">ksh 400.00</strong>
+
+                                            <input name="product_price" value="400.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/breakfast/burrito.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Burrito</h4>
+                                        <p data-name="product_desc"> Burrito sint cupidatat proident.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 390.00</strong>
+
+                                            <input name="product_price" value="390.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PRODUCTS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="lunch">
+                        Lunch
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <!-- BEGIN PRODUCTS -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/lunch/chickenwraps.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Chicken Wrap</h4>
+                                        <p data-name="product_desc">Lorem ipsum dolor sit amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 990.00</strong>
+
+                                            <input name="product_price" value="990.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/lunch/chinese1.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Chinese</h4>
+                                        <p data-name="product_desc">Duis aute irure dolor. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh1,290.50</strong>
+
+                                            <input name="product_price" value="1290.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/lunch/crabcakes.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Crab Cake</h4>
+                                        <p data-name="product_desc">Ut enim ad minim veniam. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,900.00</strong>
+
+                                            <input name="product_price" value="2900.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/lunch/grilledfish.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Grilled Fish</h4>
+                                        <p data-name="product_desc">Subway Lorem ipsum amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh1,500.00</strong>
+
+                                            <input name="product_price" value="1500.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/lunch/steak.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Steak</h4>
+                                        <p data-name="product_desc">Steak enim ad minim veniam.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh3,990.00</strong>
+
+                                            <input name="product_price" value="3990.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/lunch/sandwich.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Sandwich</h4>
+                                        <p data-name="product_desc"> Sandwich sint cupidatat proident.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,500.00</strong>
+
+                                            <input name="product_price" value="2500.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PRODUCTS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="dinner">
+                        Dinner
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <!-- BEGIN PRODUCTS -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/dinner/seafood.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Sea Food</h4>
+                                        <p data-name="product_desc">Lorem ipsum dolor sit amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 2,990.50</strong>
+
+                                            <input name="product_price" value="2990.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/dinner/porkskillet.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Grilled Pork</h4>
+                                        <p data-name="product_desc">Duis aute irure dolor. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,990.50</strong>
+
+                                            <input name="product_price" value="2990.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/dinner/roastpotatoes.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Roast Potatoes</h4>
+                                        <p data-name="product_desc">Ut enim ad minim veniam. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,990.50</strong>
+
+                                            <input name="product_price" value="2990.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/dinner/roast-dinner.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Roast Dinner</h4>
+                                        <p data-name="product_desc">Ugali Lorem ipsum amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,990.50</strong>
+
+                                            <input name="product_price" value="2990.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/dinner/chickenbreast.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Cheesy Chicken Breast</h4>
+                                        <p data-name="product_desc">Pork enim ad minim veniam.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,990.50</strong>
+
+                                            <input name="product_price" value="2990.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/dinner/turkey.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Turkey</h4>
+                                        <p data-name="product_desc"> Turkey sint cupidatat proident.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,990.50</strong>
+
+                                            <input name="product_price" value="2990.50" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PRODUCTS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="specials">
+                        Specials
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <!-- BEGIN PRODUCTS -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/specials/apple-caramel.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Apple Caramel</h4>
+                                        <p data-name="product_desc">Lorem ipsum dolor sit amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 1,490.00</strong>
+
+                                            <input name="product_price" value="1490.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/specials/fudgeicecreamdessert.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Fudge Ice Cream</h4>
+                                        <p data-name="product_desc">Duis aute irure dolor. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,000.00</strong>
+
+                                            <input name="product_price" value="2000.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/specials/chocolateandyoghurtdessert.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Chocolate Yoghurt Dessert</h4>
+                                        <p data-name="product_desc">Ut enim ad minim veniam. </p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,500.00</strong>
+
+                                            <input name="product_price" value="2500.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/specials/fivelayercake.jpeg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Five Layer Cake</h4>
+                                        <p data-name="product_desc">Ugali Lorem ipsum amet.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh 3,900.00</strong>
+
+                                            <input name="product_price" value="3900.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/specials/layeredchocolatecheesecake.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Layered Chocolate Cheesecake</h4>
+                                        <p data-name="product_desc">Pasta enim ad minim veniam.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh2,400.00</strong>
+
+                                            <input name="product_price" value="2400.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sc-product-item thumbnail">
+                                    <img data-name="product_image" src="img/specials/chocolatemintdream.jpg" alt="...">
+                                    <div class="caption">
+                                        <h4 data-name="product_name">Chocolate Mint Dream</h4>
+                                        <p data-name="product_desc"> Mint Dream cupidatat proident.</p>
+                                        <hr class="line">
+
+                                        <div>
+                                            <div class="form-group2">
+                                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                            </div>
+                                            <strong class="price pull-left">Ksh1,900.00</strong>
+
+                                            <input name="product_price" value="1900.00" type="hidden" />
+                                            <input name="product_id" value="12" type="hidden" />
+                                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Buy</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PRODUCTS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <aside class="col-md-4">
+
+                <!-- Cart submit form -->
+                <form action="results.php" method="POST">
+                    <!-- SmartCart element -->
+                    <div id="smartcart" class="add-to-cart"></div>
+                </form>
+
+            </aside>
         </div>
+    </section>
 
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/main/pasta.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 800</h4>
-            <h4><a href="#">Pasta</a>
-                      </h4>
-            <p>A traditional Italian cuisine, made of thin, unleavened dough and produced in a variety of forms, usually served with a sauce.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/main/biir.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 2000</h4>
-            <h4><a href="#">Biryani</a>
-                      </h4>
-            <p>Deliciously made rice with spices, and chicken,meat, fish, eggs or vegetables.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/main/macaroni.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 500</h4>
-            <h4><a href="#">Macaroni</a>
-                      </h4>
-            <p>A dish originally from Italy made of dough, typically cooked in boiling water served with sauce and cheese.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/main/ugali.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 2000</h4>
-            <h4><a href="#">Ugali</a>
-                      </h4>
-            <p>Delicious African cake made of corn flour served with fried whole fish and vegetables.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-md-9">
-    <div class=headers>
-      <h2>Fast Food</h2>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 col-lg-4 col-md-4 ">
-        <div class="products">
-          <img src="img/fast/ss.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 200</h4>
-            <h4><a href="#">Samosa</a>
-                        </h4>
-            <p>Authentic Indian Style Samosa at discounted rates</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/fast/ham.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 400</h4>
-            <h4><a href="#">Hamburger</a>
-                        </h4>
-            <p>A sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun and a layer of cheese on top. The patty may be pan fried, barbecued, or flame broiled.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/fast/springroll.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 800</h4>
-            <h4><a href="#">Spring Roll</a>
-                      </h4>
-            <p>A cylindrical casing of thin dough that is filled with minced vegetables served fresh or fried.</p>
-          </div>
-        </div>
-      </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="products">
-        <img src="img/fast/pizza.jpg" alt="">
-        <div class="caption">
-          <h4 class="pull-right">Ksh 2000</h4>
-          <h4><a href="#">Pizza</a>
-                      </h4>
-          <p>Pepperoni pizza is made from chicken and beef mixed together and seasoned with paprika and other chili pepper.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="products">
-        <img src="img/fast/chicken1.jpg" alt="">
-        <div class="caption">
-          <h4 class="pull-right">Ksh 500</h4>
-          <h4><a href="#">Fish fillets</a>
-                      </h4>
-          <p>Crunchy fried fish fillet with chips.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-      <div class="products">
-        <img src="img/fast/saa.jpg" alt="">
-        <div class="caption">
-          <h4 class="pull-right">Ksh 2500</h4>
-          <h4><a href="#">Lasagna</a>
-                                </h4>
-          <p>A baked dish containing layers of boiled lasagna, with cheese, a seasoned sauce of tomatoes, and meat or vegetables.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <div class="col-md-9">
-    <div class=headers>
-      <h2>Deserts</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-4 col-lg-4 col-md-4 ">
-        <div class="products">
-          <img src="img/deserts/appleroses.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 200</h4>
-            <h4><a href="#">Apple Roses</a>
-                                  </h4>
-            <p>Made with naturally sweet apple slices, sprinkled with cinnamon and rolled up in a perfectly crispy puff pastry.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/deserts/starberry.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 400</h4>
-            <h4><a href="#">Star Berry Cream </a>
-                                  </h4>
-            <p>The flaky layers of Puff Pastry are perfectly complimented by the fruit filling, and can be topped with whipped cream or ice cream for added delight.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/deserts/chocomint.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 800</h4>
-            <h4><a href="#">Chocolate Mint</a>
-                                          </h4>
-            <p>Ice cream sandwiched between golden puff pastry circles, drizzled with chocolate sauce and sprinkled with crushed peppermint candies.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/deserts/strawberry.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 2000</h4>
-            <h4><a href="#">Caramelised Plum Tart</a></h4>
-            <p> This crisp and delicate cookie is made with puff pastry dough sprinkled with sugar and rolled into the shape of palm leaves. Serve them with coffee or tea, or with your favorite dessert sampling.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/deserts/forest.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 500</h4>
-            <h4><a href="#">Black Forest</a>
-                                          </h4>
-            <p>Lulu's makes these whoopie puffs lighter than their traditional counterparts and the chocolate pudding and cherry filling makes these absolutely delicious!.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/deserts/sgulab.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 500</h4>
-            <h4><a href="#">Gulab-Jamun</a>
-                                                  </h4>
-            <p>This is an indian sweet that is a milk-solid-based used as a desert.</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-9">
-    <div class=headers>
-      <div class=headers>
-        <h2>Drinks</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 col-lg-4 col-md-4 ">
-        <div class="products ">
-          <img src="img/drinks/assorted fresh juice.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 200</h4>
-            <h4><a href="#">Assorted fresh juices</a>
-                                                    </h4>
-            <p>Variety of freshly made juices</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/drinks/coffee.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 400</h4>
-            <h4><a href="#">Coffee</a>
-                                                    </h4>
-            <p>Coffee is a brewed drink prepared from roasted coffee beans.We serve the best coffee.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/drinks/tea2.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 800</h4>
-            <h4><a href="#">Tea</a>
-                                                    </h4>
-            <p>An aromatic beverage prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/drinks/soft drinks.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 2000</h4>
-            <h4><a href="#">Assorted soft drinks</a>
-                      </h4>
-            <p>We have variety of soft drinks including coca-cola, pepsi, 7up and many more.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/drinks/cold.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 500</h4>
-            <h4><a href="#">Iced Tea and Coffe</a>
-                      </h4>
-            <p>Cold tea and coffe.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="products">
-          <img src="img/drinks/smoothies.jpg" alt="">
-          <div class="caption">
-            <h4 class="pull-right">Ksh 2500</h4>
-            <h4><a href="#">Smoothies</a>
-                      </h4>
-            <p>A smoothie is a thick beverage made from blended raw fruit.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container">
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright &copy; @lulumoha, @Casio_ka, & @elelerai</p>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="js/adcart.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript" ></script>
+    <!-- Include SmartCart -->
+    <script src="js/jquery.smartCart.min.js" type="text/javascript"></script>
+    <!-- Initialize -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // Initialize Smart Cart
+            $('#smartcart').smartCart();
+		});
+    </script>
+    <script src="js/jquery.sticky.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#smartcart").sticky({topSpacing:30});
+      });
+    </script>
 </body>
-
 </html>
